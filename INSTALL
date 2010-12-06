@@ -1,0 +1,20 @@
+INSTALL
+--------
+
+- sudo python setup.py develop
+
+TESTING
+-------
+
+NBDEBUG="" PYTHONPATH="." ./scripts/rst_tex --input tests/paper.rst --template tests/paper_template.tex --output tests/paper.tex --extension tests/paper_translator.py
+PYTHONPATH="." ./scripts/rst_tex --input tests/paper.rst --template tests/paper_template.tex --output tests/paper.tex
+
+stuff
+ - http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#escaping-mechanism
+ - http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#interpreted-text
+ - single \ goes to \\ in rawtext, and \x00 in text.
+
+LATEX WARNINGS
+
+ - Arithmatic overflow occurs with beamer when we shrink slides that have no
+   content.

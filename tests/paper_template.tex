@@ -1,0 +1,120 @@
+% For tracking purposes - this is V1.9 - April 2009
+
+\documentclass{includes/sig-alternate}
+\usepackage{color}
+\usepackage{listings}
+\input{includes/macros}
+\usepackage{verbatim}  % for comment env
+\usepackage{url} 
+
+\begin{document}
+%
+% --- Author Metadata here ---
+%\conferenceinfo{ICSE}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{[TITLE]}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{2} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\begin{comment} % anonymise
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Nick Blundell\\
+       \affaddr{School of Computer Science}\\
+       \affaddr{University of Birmingham}\\
+       \affaddr{United Kingdom}\\
+       \email{n.blundell@cs.bham.ac.uk}
+% 2nd. author
+\alignauthor
+Rachid Anane\\
+       \affaddr{Coventry University}\\
+       \affaddr{Coventry}\\
+       \affaddr{United Kingdom}\\
+       \email{R.Anane@coventry.ac.uk}
+}
+\end{comment}
+%\date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+\begin{abstract}
+[ABSTRACT]
+\end{abstract}
+
+
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+\category{D.1.5}{Software}{Object-oriented Programming}
+\category{D.2.9}{Software Engineering}{Management}[software configuration management]
+
+\terms{lenses, bi-directional programming, serialisation, object-oriented programming}
+
+\keywords{serialisation, lenses, OOP, parsing}
+
+[BODY]
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+{\scriptsize % XXX
+\bibliography{references}  % sigproc.bib is the name of the Bibliography in this case
+}
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+%\balancecolumns
+
+%\section{References}
+
+
+\end{document}
